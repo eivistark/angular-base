@@ -1,0 +1,28 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+      <div class="tite">
+          <strong >SafeVote</strong>
+      </div>
+      <form>
+      
+        <div class="con">
+          <header class="head-form">
+            <h2>Ingreso Al Sistema</h2>
+          </header>
+          <div class="field-set">
+            <div class="formGroup">
+              <input type="text" class="form-input" placeholder="Username" #userName required>
+            </div>
+            <div class="formGroup">
+              <input type="password" class="form-input" placeholder="Password" #userPassword required>
+            </div>
+            <!-- Calling SignIn Api from AuthService -->
+            <div class="formGroup">
+              <input type="button" class="btn submits sign-up" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+            </div>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+  </div>
